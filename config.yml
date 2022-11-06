@@ -1,0 +1,32 @@
+event:
+  name: "WordCamp São Paulo 2016"
+  url: "http://2016.saopaulo.wordcamp.org/"
+  date: "December 10, 2016"
+  duration: "8 hours"
+site:
+  lang: "en"
+  title: "Certificates for WordCamp São Paulo 2016"
+  logo: "static/images/logo.png"
+  index:
+    message: "Instructions here"
+    emailPlaceholder: "my@email.com"
+    inputLabel: "Email"
+    submit: "Generate"
+certificate:
+  logo: "static/images/logo.png"
+  background: "static/images/background.png"
+  textLine1: "Declaramos para os devidos fins que"
+  textLine2: "Participou do evento %event_name%, no dia %event_date%, na qualidade de %attendee_type%, cumprindo uma carga horária total de %event_duration%."
+routes:
+  certificate: certificate
+errors:
+  error: "<strong>Error:</strong> %message%"
+  missingEmail: "Missing email address!"
+  invalidEmail: "Invalid email address!"
+  emailNoExists: "The email address does not exists!"
+  notAttended: "You did not attended to this WordCamp!"
+  csvError: "An error occurred while reading the CSV file!"
+  csrfError: "Cheatin' huh?"
+  error404: "404: Page not Found"
+  error500: "500: Internal Server Error"
+csv: csv/sample.csv
